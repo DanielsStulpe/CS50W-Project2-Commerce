@@ -1,0 +1,292 @@
+body {
+    padding: 10px;
+}
+
+.container {
+    padding: 10px;
+    height: 240px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    border-color: #999;
+    margin: 5px auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.listing-image {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.listing-details {
+    margin-left: 50px;
+    flex-grow: 1;
+}
+
+.listing_img {
+    max-height: 200px;
+    max-width: 250px;
+    height: auto; 
+    width: auto; 
+    object-fit: contain; 
+}
+
+p {
+    font-family: Arial;
+}
+
+a {
+    color: black;
+}
+
+#title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+#price {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+#price_s {
+    font-weight: bold;
+}
+
+#info {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+#date {
+    font-size: 13px;
+    color: rgb(150, 150, 150);
+}
+
+#active {
+    font-size: 14px;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+#com_wr {
+    font-weight: bold;
+}
+
+.bid_input {
+    width: 33%;
+    display: block;
+    margin-bottom: 5px; 
+}
+
+.comment {
+    width: 30%;
+    margin-left: 10px;
+}
+
+.comment_info {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.comment_text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.comment_form {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.comment_form_text {
+    width: 32%;
+    border: none;
+    border-bottom: 2px solid black;
+    display: block;
+    margin-bottom: 10px;
+    height: auto;
+    overflow-y: hidden;
+}
+
+.comment_form_button {
+    display: block;
+    margin-left: 23.8%;
+}
+.comment_form_button:hover {
+    display: block;
+    margin-left: 21.8%;
+}
+
+.details, .listing_cont {
+    margin-bottom: 25px;
+}
+
+.watchlist {
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #88aaeb;
+    border-radius: 4px;
+    border: 1px solid #88aaeb;
+    transition-duration: 0.4s;
+    color: black;
+    padding: 3px 8px;
+}
+.btn:hover {
+    background-color: #88aaeb;
+    border-radius: 4px;
+    border: 1px solid black;
+    color: black;
+}
+
+.watchlist_btn {
+    font-size: 14px;
+}
+
+.close {
+    display: block;
+    float: right;
+}
+
+.list_img_cont {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 500px;
+}
+
+.list_img {
+    max-height: 280px;
+    max-width: 450px;
+    height: auto; 
+    width: auto; 
+    object-fit: contain;
+}
+
+#current_price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.closed_info {
+    margin-top: 100px;
+    text-align: center;
+    align-items: center;
+}
+
+.closed_img {
+    max-height: 250px;
+    max-width: 450px;
+    height: auto; 
+    width: auto; 
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.closed_info_text {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.category {
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+}
+
+
+.create-form {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-group input, 
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group select {
+    padding: 8px;
+    background-color: #fff;
+}
+
+.create-form input::placeholder {
+    color: #999;
+}
+
+.create-form input:focus, 
+.create-form select:focus {
+    border-color: #88aaeb;
+    outline: none;
+    box-shadow: 0 0 5px rgba(136, 170, 235, 0.5);
+}
+
+.btn-submit {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #88aaeb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #6699cc;
+}
+
+.error-message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.create_h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}

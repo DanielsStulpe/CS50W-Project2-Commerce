@@ -1,0 +1,47 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2 class="create_h2">Create Listing</h2>
+
+    <form action="{% url 'create' %}" method="post" id="createForm" class="create-form">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="title">Listing Title</label>
+            <input type="text" name="title" placeholder="Enter title">
+        </div>
+        <div class="form-group">
+            <label for="description">Listing Description</label>
+            <input type="text" id="description" name="description" placeholder="Enter description">
+        </div>
+        <div class="form-group">
+            <label for="price">Listing Starting Bid</label>
+            <input type="number" step="0.01" id="price" name="price" placeholder="Enter starting bid" max="99999.99">
+        </div>
+        <div class="form-group">
+            <label for="category">Listing Category (optional)</label>
+            <select name="category" id="category" form="createForm">
+                <option value="" selected disabled>Not selected</option>
+                <option value="Clothing, Shoes & Accessories">Clothing, Shoes & Accessories</option>
+                <option value="Sporting Goods">Sporting Goods</option>
+                <option value="Toys & Hobbies">Toys & Hobbies</option>
+                <option value="Home & Garden">Home & Garden</option>
+                <option value="Jewelry & Watches">Jewelry & Watches</option>
+                <option value="Health & Beauty">Health & Beauty</option>
+                <option value="Business">Business</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Collectibles & Art">Collectibles & Art</option>
+                <option value="Books, Movies & Music">Books, Movies & Music</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="image_url">Listing Image URL (optional)</label>
+            <input type="url" id="image_url" name="image_url" placeholder="Enter image URL">
+        </div>
+        <input type="submit" value="Create" class="btn btn-submit">
+    </form>
+
+    {% if message %}
+        <div class="error-message">{{ message }}</div>
+    {% endif %}
+{% endblock %}
